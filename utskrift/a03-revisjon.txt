@@ -1,0 +1,12 @@
+# A03-revisjon — full dekning, kjørt 2026-09-13
+# Kode: kode/a03_revisjon.py.  ARBEIDSROT satt til arbeidskatalogen.
+# Hull-kriterium: posisjonene er ikke sammenhengende 1..n.
+
+A73 FI 2021            filer  365  curveType {'A03': 12412}  perioder 12417, hull i posisjonene 3265, avkuttet hale 6995
+A73 GB 2021            filer  113  curveType {'A03': 23403}  perioder 23403, hull i posisjonene 14278, avkuttet hale 6396
+A75 NL 2023            filer   12  curveType {'A03': 240}  perioder 240, hull i posisjonene 171, avkuttet hale 71
+
+# Til sammenligning: den første tellingen 2026-09-13 kjørte globet
+#   a73-gb-dkca/GB-2021-0[12]-*.xml  avkortet til de førti første filstiene,
+# altså 30 innholdsfiler fra januar og februar 2021, og ga 4 125 av 6 521.
+# Tallet reproduserer, men dekningen var januar-februar, ikke hele 2021.

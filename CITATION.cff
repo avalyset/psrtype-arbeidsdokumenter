@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you cite a figure from these working documents, please cite this deposit."
+title: "psrtype-arbeidsdokumenter — working documents behind psrtype-samfyring and kapregister"
+abstract: >-
+  Supplementary working documents for two preregistered measurements of
+  production-type labelling in the ENTSO-E Transparency Platform. These are the
+  files that carry figures cited in the accompanying manuscripts but that are not
+  part of either frozen dataset: the A75 reconciliation report with its control
+  categories, the Danish coal/biomass time series and unit attribution, the
+  Finnish plant-heterogeneity closure, the schema audit of parallel TimeSeries,
+  the per-zone effect computation, the cross-product consistency test, the two
+  adjudication printouts before and after the A03 step-curve correction, and the
+  five scripts that produce those numbers. Deposited unchanged except that local
+  file paths were replaced with relative names. Raw XML is not included; it is
+  re-fetchable from the ENTSO-E API and is too large to archive here.
+authors:
+  - family-names: "Botten Nicolaysen"
+    given-names: "Eirik"
+    orcid: "https://orcid.org/0009-0001-9188-6788"
+    affiliation: "EcoDeco AS"
+license: Apache-2.0
+license-url: "https://www.apache.org/licenses/LICENSE-2.0"
+keywords:
+  - ENTSO-E
+  - transparency platform
+  - data quality
+  - production type
+  - co-firing
+  - curveType A03
+repository-code: "https://github.com/avalyset/psrtype-arbeidsdokumenter"
+version: "1.0.0"
+date-released: "2026-09-13"

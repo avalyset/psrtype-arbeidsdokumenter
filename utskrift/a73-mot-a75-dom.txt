@@ -1,0 +1,17 @@
+STØY: 121 par med A73 <= A75.  vedvarenhet median 0.0%, 90-pst 6.1%, MAKS 57.0%  -> terskel 57.0%
+Totalt 130 (sone, psrType)-par testet.
+
+sone           psrType                   A73 GWh    A75 GWh   ratio    vedv  K2  K3  dom
+  NL 2023      B01 Biomass               2,650.6      190.6  13.904   70.3%  ja  1 par TREFF
+        Amer 9 2,650.6 GWh -> B05 Fossil Hard coal: gap 2,655.4, lukker 99.8%, lander -0.040%
+  ES 2023      B14 Nuclear              50,788.4   19,980.3   2.542   88.9%  ja  0 par A75-defekt
+  ES 2023      B05 Fossil Hard coal      3,733.6    2,174.2   1.717   80.3%  ja  0 par A75-defekt
+  PL 2023      B12 Hydro Reservoir         176.7      133.3   1.325   38.3%  nei 0 par støy
+  DK-CA 2023   B04 Fossil Gas            2,527.8    1,934.7   1.307   70.4%  ja  0 par A75-defekt
+  GB 2021      B10 Hydro Pumped            871.0      764.4   1.139   64.8%  ja  0 par A75-defekt
+  NL 2023      B14 Nuclear               3,579.4    3,500.7   1.022   22.4%  nei 0 par støy
+  PL 2023      B02 Lignite              31,649.1   31,473.1   1.006   41.9%  nei 8 par støy
+        Bełchatów B05 1,955.1 GWh -> B04 Fossil Gas: gap 2,100.4, lukker 93.1%, lander -1.169%
+        Bełchatów B06 1,999.6 GWh -> B04 Fossil Gas: gap 2,100.4, lukker 95.2%, lander -0.812%
+        Bełchatów B09 2,125.1 GWh -> B04 Fossil Gas: gap 2,100.4, lukker 101.2%, lander +0.198%
+  FI 2021-2024 B14 Nuclear             105,532.2  105,389.7   1.001   10.5%  nei 0 par støy
