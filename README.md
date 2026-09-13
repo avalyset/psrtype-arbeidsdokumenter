@@ -1,8 +1,16 @@
 # psrtype-arbeidsdokumenter
 
 **Arbeidsdokumentene bak to preregistrerte målinger av produksjonstypemerking i ENTSO-Es
-Transparency Platform.** Dette er ikke en ny måling. Det er filene som *bærer tall* som de to
-frosne datasettene og de to manuskriptene viser til, men som ikke selv er del av noen av dem.
+Transparency Platform.**
+
+**Dette er ikke et selvstendig arbeid, og det skal ikke leses som ett.** Det er ingen ny måling
+her, ingen egen preregistrering og ingen konklusjon som ikke står et annet sted. Det er filene som
+*bærer tall* som to datasett og to manuskripter viser til, men som ikke selv er del av noen av
+dem — samlet og deponert så henvisningene peker på noe permanent i stedet for på en lokal disk.
+
+**Siteres av:** de to datasettene under, og to manuskripter — en datapaper om de to datasettene
+(*Scientific Data*-format) og et policy-papir om regelen som mangler (*Energy Policy*-format).
+Funnene siteres fra datasettene, ikke herfra.
 
 De to datasettene:
 
@@ -23,8 +31,8 @@ som styrer målingene ligger låst og sjekksummet i de to datasettene, og de er 
 | Fil | Bærer blant annet |
 |---|---|
 | `RAPPORT-A75-2026-09-12.md` | negative kontroller (§2.4): kjernekraft **0,99–1,00×**, vind **0,94–0,98×**; fransk kjernekraft **1,99× → 0,996–0,997×** etter at éCO2mix-feltets oppløsning ble fastslått; massebevaring (§2.2) |
-| `DK-KULL-TIDSSERIE.md` | A75 kull mot Energinet 2019–2025, **1,003–1,116** over seks år |
-| `DK-ENHETSTILORDNING.md` | massebevaringen under begge lesninger (§4); **DK1 1,01–1,02×** som kontrollen som validerer kjøringen |
+| `DK-KULL-TIDSSERIE.md` | A75 kull mot Energinet 2019–2025; massebevaring **1,00–1,12× over tolv sone-år**; DK1 **1,01–1,02×** som kontroll |
+| `DK-ENHETSTILORDNING.md` | massebevaringen under begge lesninger (§4); den publiserte serien reprodusert eksakt, **1,003 til 1,116 over seks år** |
 | `FI-LUKKING.md` | dekningen i den finske torvkolonnen: **39–45 %** kommer fra anlegg under 100 MW-terskelen |
 | `PSRTYPE-SKJEMA.md` | XSD-kardinalitetene ordrett; **1 190 parallelle serier, alle retningsdelte, null med ulik `psrType`** |
 | `EFFEKT-PER-SONE.md` | A03-feilen i egen parsing (§0); effekten per sone; hva årsoppløsning retter og ikke retter |
@@ -56,7 +64,7 @@ med relative navn. **Utsagn om publiseringsstatus gjelder skrivetidspunktet, ikk
 
 ## Trappekurven, og en rettelse av dekningen
 
-**Alle ENTSO-E-seriene her er `curveType A03`.** En manglende posisjon i en `Period` betyr ikke
+**Hver eneste ENTSO-E-serie som er talt i dette materialet er `curveType A03`** — 12 412 av 12 412 i FI 2021, 23 403 av 23 403 i GB 2021, 240 av 240 i NL 2023 A75. En manglende posisjon i en `Period` betyr ikke
 manglende data — den betyr at **forrige verdi holder** til neste oppgitte posisjon. En parser som
 summerer bare de oppførte punktene underrapporterer energi, og ikke ensartet: målt på FI 2021 ga
 den Alholmens B2 **+4,9 %** for lavt, Seinäjoki B1 **+7,2 %** og Keljonlahti B1 **+22,6 %**.
@@ -72,6 +80,25 @@ den Alholmens B2 **+4,9 %** for lavt, Seinäjoki B1 **+7,2 %** og Keljonlahti B1
 **Den første tellingen 13.09.2026 oppga «4 125 av 6 521» for GB 2021.** Tallet reproduserer, men
 globet var `GB-2021-0[12]-*.xml` avkortet til de førti første filstiene — **30 innholdsfiler fra
 januar og februar**, ikke hele året. Dekningen var oppgitt for vid. Tabellen over står i stedet.
+
+---
+
+## Referanser ut av depotet
+
+Dokumentene er arbeidsnotater og henviser til **36 filnavn som ikke ligger her**: søskennotater
+fra samme arbeidskatalog, rådatafiler, og manifester for enkeltkjøringer. Det er tilsiktet, og
+det løses slik:
+
+| Det som refereres | Hvor det er |
+|---|---|
+| `PREREG-v1.md` og tilleggene | i de to datasettene, under DOI-ene over |
+| `MANIFEST-*.md` for enkeltkjøringer | erstattet av `SHA256SUMS` og `MANIFEST.md` her |
+| rådata-CSV og -XML | re-hentbare fra ENTSO-E, Energinet, Fingrid og StatFin |
+| øvrige søskennotater | ikke deponert; de bærer ingen tall som manuskriptene viser til |
+| `carbon_intensity_per_source.json` | codecarbon v3.2.8, `sha256 7daf4e84…9368896` |
+
+**Ingen av dem bærer et tall som et manuskript viser til.** Det er kriteriet for hva som ble
+tatt med her, og det er hele kriteriet.
 
 ---
 
@@ -93,4 +120,7 @@ Se `CITATION.cff`. Depotet siteres når en figur herfra brukes; selve funnene si
 
 ## Lisens
 
-Kode under Apache-2.0 (`LICENSE`). Dokumenter og utskrifter under CC BY 4.0 (`LICENSE-DATA`).
+**Depotet som helhet er CC BY 4.0** (`LICENSE-DATA`) — dokumenter, utskrifter og skript.
+Skriptene her er dokumentasjon av metode, ikke et programvareprodukt. For den som vil gjenbruke
+dem *som* programvare, tilbys de i tillegg under Apache-2.0 (`LICENSE`); velg den av de to som
+passer bruken. Attribusjon kreves under begge.

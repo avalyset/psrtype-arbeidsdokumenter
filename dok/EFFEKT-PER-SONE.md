@@ -7,7 +7,7 @@
 
 
 Kjørt 2026-09-13. **Ingen commit, ingen push.** Kode: `effekt_per_sone.py`, `a73_mot_a75.py`.
-Sikring: `MANIFEST-EFFEKT-PER-SONE.md`.
+Sjekksummer for depotet: `SHA256SUMS`.
 
 ---
 
@@ -16,6 +16,12 @@ Sikring: `MANIFEST-EFFEKT-PER-SONE.md`.
 **Alle ENTSO-E-seriene har `curveType A03`** — trappekurve, der en manglende posisjon betyr at
 forrige verdi holder, ikke at data mangler. Målt: 12 412 av 12 412 tidsserier i FI 2021, og hull
 i posisjonene i 4 125 av 6 521 perioder i GB 2021.
+
+> **Rettet ved deponering:** GB-tallet over dekker ikke hele 2021. Globet var
+> `GB-2021-0[12]-*.xml` avkortet til de førti første filstiene — 30 innholdsfiler fra januar og
+> februar. Tallet reproduserer for den delmengden. Over full dekning er GB 2021
+> **14 278 av 23 403** perioder. Se `utskrift/a03-revisjon.txt` og `kode/a03_revisjon.py`.
+> FI-tallet, 12 412 av 12 412 tidsserier, gjelder alle 365 døgn og står.
 
 **Parseren jeg skrev 12.09 (`a73_mot_a75.py`) summerte bare de punktene som står oppført.** Den
 underrapporterte derfor energi i hver serie med hull. Feilen er rettet; den naive versjonen er

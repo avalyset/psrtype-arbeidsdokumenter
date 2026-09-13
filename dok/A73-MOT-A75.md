@@ -8,8 +8,27 @@
 
 Kjørt 2026-09-12. **Ingen endring i `psrtype-samfyring`.** Ingen commit, ingen push.
 
-Rådata og sjekksummer: `MANIFEST-A73-MOT-A75.md`. Kode: `a73_mot_a75.py`,
-`a73_mot_a75_endelig.py`. Rå utskrift: `a73-mot-a75-dom.txt`.
+Kode: `kode/a73_mot_a75.py`, `kode/a73_mot_a75_endelig.py`. Rå utskrift:
+`utskrift/a73-mot-a75-dom.txt`. Sjekksummer for depotet: `SHA256SUMS`.
+
+> ### ⚠ Dette dokumentet er kjørt FØR A03-rettelsen. Tallene under er supersederte.
+>
+> Parseren som produserte dem summerte bare de punktene som står oppført i hver `Period`.
+> Alle ENTSO-E-seriene er `curveType A03`, der en manglende posisjon betyr at forrige verdi
+> **holder**. Rettelsen er dokumentert i `dok/EFFEKT-PER-SONE.md` §0, og den rettede kjøringen
+> ligger i `utskrift/a73-mot-a75-dom-A03.txt`.
+>
+> | I dette dokumentet | Gjeldende, etter A03 |
+> |---|---|
+> | 121 par uten mistanke, terskel **57,0 %**, 90-persentil 6,1 % | **124 par**, terskel **54,7 %**, 90-persentil **3,8 %** |
+> | **ni** par med A73 > A75 | **seks** |
+> | Amer 9 **2 650,6** GWh, gap 2 655,4, avvik **−0,040 %** | **2 657,7** GWh, gap 2 687,8, avvik **−0,251 %** |
+> | ES 2023 `B14` og `B05` ført som **«A75-defekt»** | **trukket.** ES-kjernekraft gir A73 54 356,4 mot A75 54 372,6, ratio 1,000 |
+> | «A75 hopper mellom 1 254 og 5 125 MW» | **trukket.** Hoppene var trappekurven, lest feil |
+> | Solina-illustrasjonen av kravet om eksisterende gap | **strøket.** Reproduserer ikke etter A03; kriteriet er begrunnet strukturelt i stedet |
+>
+> **Metoden og de tre kriteriene står uendret.** Det er tallene og to av dommene som flyttet seg.
+> Dokumentet er deponert slik det var fordi det er sporet: uten det kan ikke rettelsen etterprøves.
 
 ---
 

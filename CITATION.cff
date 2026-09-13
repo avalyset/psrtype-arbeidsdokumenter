@@ -1,25 +1,29 @@
 cff-version: 1.2.0
-message: "If you cite a figure from these working documents, please cite this deposit."
+message: "If you cite a figure from these working documents, please cite this deposit. Cite the findings themselves from the two datasets listed under references."
 title: "psrtype-arbeidsdokumenter — working documents behind psrtype-samfyring and kapregister"
 abstract: >-
   Supplementary working documents for two preregistered measurements of
-  production-type labelling in the ENTSO-E Transparency Platform. These are the
-  files that carry figures cited in the accompanying manuscripts but that are not
-  part of either frozen dataset: the A75 reconciliation report with its control
-  categories, the Danish coal/biomass time series and unit attribution, the
-  Finnish plant-heterogeneity closure, the schema audit of parallel TimeSeries,
-  the per-zone effect computation, the cross-product consistency test, the two
-  adjudication printouts before and after the A03 step-curve correction, and the
-  five scripts that produce those numbers. Deposited unchanged except that local
-  file paths were replaced with relative names. Raw XML is not included; it is
-  re-fetchable from the ENTSO-E API and is too large to archive here.
+  production-type labelling in the ENTSO-E Transparency Platform. This is not a
+  standalone study: there is no new measurement here, no preregistration of its
+  own, and no conclusion that does not appear elsewhere. It collects the files
+  that carry figures cited by those two datasets and by two manuscripts, but
+  that are not part of either dataset: the A75 reconciliation report with its
+  control categories, the Danish coal/biomass time series and unit attribution,
+  the Finnish plant-heterogeneity closure, the schema audit of parallel
+  TimeSeries, the per-zone effect computation, the cross-product consistency
+  test, the adjudication printouts before and after the curveType A03
+  step-curve correction, and the six scripts that produce those numbers.
+  Deposited unchanged except that local file paths were replaced with relative
+  names and that two documents carry a dated notice where a later run
+  superseded their figures. Raw XML is not included; it is re-fetchable from
+  the ENTSO-E API and too large to archive here.
 authors:
   - family-names: "Botten Nicolaysen"
     given-names: "Eirik"
     orcid: "https://orcid.org/0009-0001-9188-6788"
     affiliation: "EcoDeco AS"
-license: Apache-2.0
-license-url: "https://www.apache.org/licenses/LICENSE-2.0"
+license: CC-BY-4.0
+license-url: "https://creativecommons.org/licenses/by/4.0/"
 keywords:
   - ENTSO-E
   - transparency platform
@@ -27,6 +31,24 @@ keywords:
   - production type
   - co-firing
   - curveType A03
+  - reproducibility
 repository-code: "https://github.com/avalyset/psrtype-arbeidsdokumenter"
 version: "1.0.0"
 date-released: "2026-09-13"
+references:
+  - type: data
+    title: "psrtype-samfyring — ENTSO-E's schema permits two production types per generation unit; no TSO uses it"
+    authors:
+      - family-names: "Botten Nicolaysen"
+        given-names: "Eirik"
+        orcid: "https://orcid.org/0009-0001-9188-6788"
+    doi: "10.5281/zenodo.22726238"
+    notes: "Concept DOI; current version v1.3.1 is 10.5281/zenodo.22733391"
+  - type: data
+    title: "kapregister — production-type revision between ENTSO-E capacity-register vintages"
+    authors:
+      - family-names: "Botten Nicolaysen"
+        given-names: "Eirik"
+        orcid: "https://orcid.org/0009-0001-9188-6788"
+    doi: "10.5281/zenodo.22722721"
+    notes: "Concept DOI; current version v1.2.0 is 10.5281/zenodo.22733114"
