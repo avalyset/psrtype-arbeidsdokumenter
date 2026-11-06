@@ -1,21 +1,22 @@
-# MANIFEST — psrtype-arbeidsdokumenter v1.0.0
+# MANIFEST — psrtype-arbeidsdokumenter v1.0.1
 
-Frosset 2026-09-13.
+Frosset 2026-09-13 (v1.0.0). Rettet 2026-11-06 (v1.0.1).
 
-22 filer  175 114 B
+23 filer  177 970 B
 
 | Fil | B | sha256 |
 |---|---:|---|
 | `.gitignore` | 42 | `a50431a748974350585736705c4cd4725a60341f58914c4dab2d0fda627fcae0` |
-| `CITATION.cff` | 2650 | `27ab4c60314fb48b3161e5ce4fdc5b8c941a95b3ba28ed18cf14ce239e7923cf` |
+| `.zenodo.json` | 2294 | `2f86d20951f7bec20a908ec43b4006fb525c910874c02e3eb398482ac6894cbf` |
+| `CITATION.cff` | 2757 | `c98a47ac3e71deb3986f16ffb926e5946cc043a1dbde07555396db26b98d4c2d` |
 | `LICENSE` | 11358 | `cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30` |
 | `LICENSE-DATA` | 568 | `9df11493bc46950b03443ee26128c1763bb117c59f9ebc3669fec44e0e0f0307` |
 | `README.md` | 6807 | `f195624a3fb5a65e8928ce13867dc9dffee26c554fab05fea75df24de0d6773e` |
-| `SHA256SUMS` | 1882 | `4a7cfd7b364945b55443615653cf742e0b4a8fa3ba425100c4ba0df9613988ec` |
-| `dok/A73-MOT-A75.md` | 10623 | `9ec7ae6c10fc906da03176d38d25fc73b8e7590b9da1c38c8bf0924faa10c520` |
+| `SHA256SUMS` | 1963 | `b1ab1ae1e16fa0bf517823cc16309d6df5f1ade3940bc13c66d105142fdc59f0` |
+| `dok/A73-MOT-A75.md` | 10763 | `745e9a0d7102be7f66c3d321cead2dfd7339d7655cc2b1b206b48d6571b6a66a` |
 | `dok/DK-ENHETSTILORDNING.md` | 7611 | `3c44013030bf916bbd5e265319a1178eb862704385e826039b01e77bfe9c2baa` |
 | `dok/DK-KULL-TIDSSERIE.md` | 24611 | `8c365a41fb5e9cf19c4b9b3e6e2868dadd7cc8290a990d0d3bd4477f7324cf32` |
-| `dok/EFFEKT-PER-SONE.md` | 10227 | `f6c5a1e38cfb926d0cd6d93e94df65e26d90e4790508a8a4b66aceb961564775` |
+| `dok/EFFEKT-PER-SONE.md` | 10461 | `42635307411a0cd9bc49ab0f8118685b7b7d4cdf792c942b71681f51c7a445d6` |
 | `dok/FI-LUKKING.md` | 36608 | `040dc5298c2adb425810564b0c08959c8a16085e80bc883f0ecf9b23acdee3a7` |
 | `dok/PSRTYPE-SKJEMA.md` | 16648 | `ff2a52d5a8561de612bbe436c56818b120402bb2046bc367180fd1a7fca55f7a` |
 | `dok/RAPPORT-A75-2026-09-12.md` | 20706 | `4952719111fda74d60b041718adf02b7766d4110795d19220b61a15c6acbcd48` |
@@ -54,5 +55,13 @@ Søket virker; nullene er egenskaper ved filene.
 - en datert note øverst i hvert dokument
 - **`dok/A73-MOT-A75.md` har fått en supersedert-tabell** — dokumentet er kjørt før A03-rettelsen
 - **`dok/EFFEKT-PER-SONE.md` §0 har fått en rettelse av GB-dekningen** — 4 125/6 521 dekket
-  januar–februar, ikke hele 2021; full dekning gir 14 278/23 403
+  30 innholdsfiler fra januar og februar, ikke hele 2021; full dekning gir 14 278/23 403
 - `kode/a03_revisjon.py` og `utskrift/a03-revisjon.txt` er nye
+
+## v1.0.1 (2026-11-06)
+
+- **`dok/EFFEKT-PER-SONE.md`:** CZ-raden i restfeiltabellen er rettet. Den var regnet ved 252 GWh i stedet for øvre grense 402 GWh. Dokumenthodet nevner nå de daterte rettelsene.
+- **`dok/A73-MOT-A75.md`:** tabellen over erstattede tall har fått raden for A75s kullkolonne i NL 2023. Dokumenthodet nevner nå de daterte rettelsene.
+- **`CITATION.cff`:** versjon, dato og sammendrag er oppdatert, og merknaden til de to referansene sier nå at DOI-en er en konsept-DOI som peker på nyeste versjon.
+- **`.zenodo.json`:** ny fil, med relasjoner til MS-1, MS-2 og GitHub-taggen v1.0.1.
+- **`MANIFEST.md`:** loggen for v1.0.0 over sier nå hvor mange innholdsfiler GB-tellingen dekket.

@@ -2,7 +2,7 @@
 
 > **Deponert arbeidsdokument.** Skrevet under arbeidet med `psrtype-samfyring` og
 > `kapregister`, og deponert her uendret bortsett fra at lokale filstier er erstattet
-> med relative navn. Utsagn om publiseringsstatus, åpne løkker og «ingen DOI» gjelder
+> med relative navn, og bortsett fra de daterte rettelsene som er merket i teksten. Utsagn om publiseringsstatus, åpne løkker og «ingen DOI» gjelder
 > skrivetidspunktet, ikke i dag. Tallene er dem manuskriptene viser til.
 
 
@@ -162,8 +162,10 @@ Det som står igjen er en tidsfeil, og den skalerer lineært med hvor mye `f(t)`
 |---|---:|---:|---:|---:|
 | **NL 2023** | **25,45** | **0,74** | **± 6,36 g/kWh** | **± 12,73 g/kWh** |
 | **FI 2021** | 2,14 | 0,44 | ± 0,54 | ± 1,07 |
-| **CZ 2023** | 0,78 | 0,22 | ± 0,19 | ± 0,39 |
+| **CZ 2023** | 1,24 | 0,22 | ± 0,31 | ± 0,62 |
 | **PL 2023** | 0,30 | 0,18 | ± 0,07 | ± 0,15 |
+
+*Rettet 2026-11-06 (v1.0.1): CZ-raden var regnet ved 252 GWh i stedet for øvre grense 402 GWh; verdiene over er fra `cz_std.txt` i MS-2 v1.2 (10.5281/zenodo.24016061).*
 
 **Tabellen over timekorreksjonen *er* tabellen over restfeil per enhet relativ variasjon.** Det
 krever ingen ny antakelse: varierer samfyringsandelen med ±50 % relativt gjennom året, er

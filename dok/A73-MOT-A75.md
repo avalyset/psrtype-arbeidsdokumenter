@@ -2,7 +2,7 @@
 
 > **Deponert arbeidsdokument.** Skrevet under arbeidet med `psrtype-samfyring` og
 > `kapregister`, og deponert her uendret bortsett fra at lokale filstier er erstattet
-> med relative navn. Utsagn om publiseringsstatus, åpne løkker og «ingen DOI» gjelder
+> med relative navn, og bortsett fra de daterte rettelsene som er merket i teksten. Utsagn om publiseringsstatus, åpne løkker og «ingen DOI» gjelder
 > skrivetidspunktet, ikke i dag. Tallene er dem manuskriptene viser til.
 
 
@@ -23,6 +23,7 @@ Kode: `kode/a73_mot_a75.py`, `kode/a73_mot_a75_endelig.py`. Rå utskrift:
 > | 121 par uten mistanke, terskel **57,0 %**, 90-persentil 6,1 % | **124 par**, terskel **54,7 %**, 90-persentil **3,8 %** |
 > | **ni** par med A73 > A75 | **seks** |
 > | Amer 9 **2 650,6** GWh, gap 2 655,4, avvik **−0,040 %** | **2 657,7** GWh, gap 2 687,8, avvik **−0,251 %** |
+> | A75 `B05 Fossil Hard coal` NL 2023 **11 897,1** GWh | **11 977,5** GWh |
 > | ES 2023 `B14` og `B05` ført som **«A75-defekt»** | **trukket.** ES-kjernekraft gir A73 54 356,4 mot A75 54 372,6, ratio 1,000 |
 > | «A75 hopper mellom 1 254 og 5 125 MW» | **trukket.** Hoppene var trappekurven, lest feil |
 > | Solina-illustrasjonen av kravet om eksisterende gap | **strøket.** Reproduserer ikke etter A03; kriteriet er begrunnet strukturelt i stedet |

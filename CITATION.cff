@@ -17,6 +17,8 @@ abstract: >-
   names and that two documents carry a dated notice where a later run
   superseded their figures. Raw XML is not included; it is re-fetchable from
   the ENTSO-E API and too large to archive here.
+  v1.0.1 corrects the CZ row of the residual table in EFFEKT-PER-SONE.md,
+  which was computed at 252 GWh instead of the upper bound of 402 GWh.
 authors:
   - family-names: "Botten Nicolaysen"
     given-names: "Eirik"
@@ -33,8 +35,8 @@ keywords:
   - curveType A03
   - reproducibility
 repository-code: "https://github.com/avalyset/psrtype-arbeidsdokumenter"
-version: "1.0.0"
-date-released: "2026-09-13"
+version: "1.0.1"
+date-released: "2026-11-06"
 references:
   - type: data
     title: "psrtype-samfyring — ENTSO-E's schema permits two production types per generation unit; no TSO uses it"
@@ -43,7 +45,7 @@ references:
         given-names: "Eirik"
         orcid: "https://orcid.org/0009-0001-9188-6788"
     doi: "10.5281/zenodo.22726238"
-    notes: "Concept DOI; current version v1.3.1 is 10.5281/zenodo.22733391"
+    notes: "Concept DOI; resolves to the latest version"
   - type: data
     title: "kapregister — production-type revision between ENTSO-E capacity-register vintages"
     authors:
@@ -51,4 +53,4 @@ references:
         given-names: "Eirik"
         orcid: "https://orcid.org/0009-0001-9188-6788"
     doi: "10.5281/zenodo.22722721"
-    notes: "Concept DOI; current version v1.2.0 is 10.5281/zenodo.22733114"
+    notes: "Concept DOI; resolves to the latest version"
